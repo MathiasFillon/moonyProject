@@ -118,12 +118,18 @@ body {
 
 #slides .slidesjs-previous {
     margin-right: 5px;
-    float: left;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 100;
 }
 
 #slides .slidesjs-next {
     margin-right: 5px;
-    float: left;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 100;
 }
 
 .slidesjs-pagination {
