@@ -5,7 +5,9 @@
     <title>Moony Homemade Burger</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="moonyProject.css" rel="stylesheet">
+    <link href="css/moonyProject.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/example.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
@@ -13,13 +15,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
+    <!-- incrustation jQuery sliders -->
+    <style>
+
+        /* Prevents slides from flashing */
+        
+        #slides {
+            display: none;
+        }
+    </style>
+
+
+
+    <script>
+        $(function () {
+            $("#slides").slidesjs({
+                // Do not use width and height in settings!!!
+                width: 813,
+                height: 542,
+                navigation: false
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <script src="moonyJS.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script src="js/moonyJS.js"></script>
+    <div id="settings" class="dropdown">
+        <button onclick="myFunction2()" type="button" class="dropbtn">Settings</button>
+        <div id="mySettings" class="dropdown-content">
+            <a href="#">Bordeaux</a>
+            <a href="#">Biarritz</a>
+        </div>
+    </div>
     <div id="header">
         <div class="headerLogo">
-            <img src="logoFull.png" alt="Moony">
+            <img src="img/logoFull.png" alt="Moony">
         </div>
         <div class="headerButton">
             <div class="headerObject">
@@ -29,7 +63,7 @@
                 <button type="button" class="button">Contact</button>
             </div>
             <div class="headerObject dropdown">
-                <button onclick="myFunction()" type="button" class="dropbtn button">On reste chez soi ?</button>
+                <button onclick="myFunction1()" type="button" class="dropbtn button">On reste chez soi ?</button>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="#">Bordeaux</a>
                     <a href="#">Biarritz</a>
@@ -37,5 +71,21 @@
             </div>
         </div>
 
+    </div>
+    <div class="container">
+        <div id="slides">
+            <img src="img/food1.jpg" alt="">
+            <img src="img/food2.jpg" alt="">
+            <img src="img/food3.jpg" alt="">
+            <img src="img/food4.jpg" alt="">
+            <img src="img/food5.jpg" alt="">
+            <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+            <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+        </div>
+    </div>
+    <div id="gallery">
+        <div id="slides">
+
+        </div>
     </div>
 </body>
