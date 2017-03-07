@@ -1,5 +1,5 @@
 .container{
-    width: 1000px;
+    margin: auto;
 }
 img{
     border: 2px solid black;
@@ -25,4 +25,12 @@ img{
     width: 100%;
     height: auto;
     display: block;
+}
+.menu-autre{
+    position: absolute;
+    padding: 15px;
+}
+.menu-classique{
+    position: absolute;
+    padding: 20px;
 }
