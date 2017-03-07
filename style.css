@@ -1,0 +1,28 @@
+.container{
+    width: 1000px;
+}
+img{
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.burgers{ 
+    padding: 5px; 
+    margin: 3px;
+}
+.salade{
+    margin: 3px;
+    padding: 5px;
+}
+.autre{
+    padding: 5px; 
+    margin: 3px;
+}
+.dessert{
+    padding: 5px; 
+    margin: 3px;
+}
+.img-responsive{
+    width: 100%;
+    height: auto;
+    display: block;
+}
