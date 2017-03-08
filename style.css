@@ -9,11 +9,29 @@ img{
     width: 100%;
     height: auto;
 }
-.menu-autre{
+.menu{
+    /*color: white;
+    width: 100%;
+    height: 100%;
+    margin: 5px 30px 30px 5px;
+    background-color: black;
+    opacity: 0.5;*/
     position: absolute;
+}
+.menu-glasse{
+    margin: 50px;
+}
+.glasse{
+    border: none;
+    float: right;
+    padding: 15px;
+}
+.menu3{
+    padding:15px;
+}
+.menu-autre{  
     padding: 15px;
 }
 .menu-classique{
-    position: absolute;
-    padding: 20px;
+    padding: 15px;
 }
